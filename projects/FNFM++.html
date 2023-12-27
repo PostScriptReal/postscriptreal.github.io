@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awesome webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="images/favi.png">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Ubuntu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto&display=swap');
+    .starter {
+        color: whitesmoke;
+        font-family: 'Kanit', sans-serif;
+        font-size: 36px;
+        text-align: center;
+    }
+    body {
+        background-color: rgb(28, 28, 69);
+    }
+
+     /* The navigation menu */
+     .navbar {
+      overflow: hidden;
+      background-color: rgb(50, 41, 91);
+    }
+    
+    /* Navigation links */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* The subnavigation menu */
+    .subnav {
+      float: left;
+      overflow: hidden;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    
+    /* Subnav button */
+    .subnav .subnavbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    /* Add a red background color to navigation links on hover */
+    .navbar a:hover, .subnav:hover .subnavbtn {
+      background-color: rgb(66, 55, 117);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: rgb(66, 55, 117);
+      width: 100%;
+      z-index: 1;
+    }
+    
+    /* Style the subnav links */
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .subnav-content a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    p {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 18px;
+    }
+    .header {
+        color: whitesmoke;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 20%; */
+        text-align: center;
+    }
+    a {
+        color: rgb(255, 136, 0);
+    }
+    a:visited {
+        color: rgb(166, 89, 0);
+    }
+</style>
+</head>
+<body>
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navbar">
+        <div class="subnav">
+          <a href="file:///C:/Users/karen/Github Repos/Website/index.html"><button class="subnavbtn">Home</button></a>
+        </div>
+        <div class="subnav">
+          <a href="file:///C:/Users/karen/Github Repos/Website/projs.html"><button class="subnavbtn">Projects</button></a>
+        </div>
+        <!-- <div class="subnav">
+          <button class="subnavbtn">Research <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#link1">Tsunami Research</a>
+            <a href="#link2">International Tsunami Information Center</a>
+          </div>
+        </div> -->
+        <div class="subnav">
+          <a href="file:///C:/Users/karen/Github Repos/Website/about.html"><button class="subnavbtn">About Me</button></a>
+        </div>
+      </div>
+
+<p class="starter">Friday Night Funkin' Modding ++</p>
+<p>FNF Modding ++ is a fork of BulbyVR's FNF Modding+ which was a modding engine for FNF that would allow users to make mods without 
+  needing access to source code, making the process easier and more efficient.
+</p>
+<p>Modding++ was created after Modding+ had been abandoned in late November of 2021 (before the last commit in the source code), I loved the 
+  engine and didn't want to switch to another one that was still being actively maintained so I forked it and made improvements of my 
+  own. This resulted in the birth of the project.
+</p>
+<p>Eventually, after almost a year of development, I abandoned Modding++ because I stopped playing FNF and didn't want to continue
+  a project that wasn't going to end up being released. As such it has been archived on my Github and left in an incomplete, yet 
+  playable/usable state.
+</p>
+<h2 class="header">Post Mortem Patch</h2>
+<p>An updated version is currently in the works that plans to fix issues and bugs in the last build and give the project a final 
+  version that would be much more satisfying and complete, no massive new features are planned to be added and the patch is being 
+  worked on seperately. The archived, incomplete version will stay for preservation purposes.
+</p>
+<h2 class="header">Source code and Build Downloads</h2>
+<p>If for whatever reason you'd like to mess around with M++, there is a link to the github archive page of the project that hosts 
+  old prototype builds, source code and the last build before abandonment. Note that the source code for the old builds are lost.
+</p>
+<a href="https://github.com/PostScriptReal/FNFModding-"><p><img src="images/Github.png" alt="FNFM++ Github"></p></a>
+
+</body>
+</html> 

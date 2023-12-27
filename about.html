@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awesome webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="images/favi.png">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Ubuntu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto&display=swap');
+    .starter {
+      color: whitesmoke;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2.2vw;
+      text-align: center;
+    }
+    body {
+        background-color: rgb(28, 28, 69);
+    }
+
+     /* The navigation menu */
+     .navbar {
+      overflow: hidden;
+      background-color: rgb(50, 41, 91);
+    }
+    
+    /* Navigation links */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* The subnavigation menu */
+    .subnav {
+      float: left;
+      overflow: hidden;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    
+    /* Subnav button */
+    .subnav .subnavbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    /* Add a red background color to navigation links on hover */
+    .navbar a:hover, .subnav:hover .subnavbtn {
+      background-color: rgb(66, 55, 117);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: rgb(66, 55, 117);
+      width: 100%;
+      z-index: 1;
+    }
+    
+    /* Style the subnav links */
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .subnav-content a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    p {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 1.3vw;
+    }
+    .header {
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+    }
+    .grid-container {
+      height: 100vh;
+      display: grid;
+      padding: 50px;
+      grid-template:
+        "mkwii mkwii" 500px
+        "minceraft gmod" 200px
+        "svencoop gmod" 200px
+        "fnf fnf" 500px
+    }
+    .grid-item {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .item-1 {
+      grid-area: minceraft;
+    }
+    .item-2 {
+      grid-area: fnf;
+    }
+    .item-3 {
+      grid-area: mkwii;
+    }
+    .item-4 {
+      grid-area: svencoop;
+    }
+    .item-5 {
+      grid-area: gmod;
+    }
+
+    .mkwii {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 501px;
+      text-align: center;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -220px;
+    }
+    .sandwich {
+      display: block;
+      margin-top: -220px;
+    }
+    a {
+        color: rgb(255, 136, 0);
+    }
+    a:visited {
+        color: rgb(166, 89, 0);
+    }
+</style>
+</head>
+<body>
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navbar">
+        <div class="subnav">
+          <a href="index.html"><button class="subnavbtn">Home</button></a>
+        </div>
+        <div class="subnav">
+          <a href="projs.html"><button class="subnavbtn">Projects</button></a>
+        </div>
+        <!-- <div class="subnav">
+          <button class="subnavbtn">Research <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#link1">Tsunami Research</a>
+            <a href="#link2">International Tsunami Information Center</a>
+          </div>
+        </div> -->
+        <div class="subnav">
+          <a href="about.html"><button class="subnavbtn">About Me</button></a>
+        </div>
+      </div>
+
+<p class="starter">I am PostScript, a young Australian programmer making stuff for the hell of it!</p>
+<p>Formerly known online as 'Popularsonic', I have been learning and messing around with tech since the mid 2010s.</p>
+<p>Over the years I have been persuing programming and video game modding. The games I have/had modded are shown below: </p>
+
+<div class="grid-container">
+  <div class="grid-item item-1">
+      <img src="images/minceraft.png" alt="Minecraft" width=200 height=200 style="float: right;" class="sandwich">
+  </div>
+  <div class="grid-item item-5">
+    <img src="images/gmod.jpg" alt="Garry's Mod" width=300 height=400 class="sandwich">
+  </div>
+  <div class="grid-item item-4">
+    <img src="images/svencoop.png" alt="Sven Co-op" width=200 height=200 style="float: right;" class="sandwich">
+  </div>
+  <div class="grid-item item-3">
+    <img src="images/mkwii.png" alt="Mario Kart Wii" width=500 height=281 class="mkwii">
+  </div>
+  <div class="grid-item item-2">
+    <img src="images/fnf.png" alt="Friday Night Funkin'" class="center" width=500 height=330>
+  </div>
+</div>
+
+</body>
+</html> 
