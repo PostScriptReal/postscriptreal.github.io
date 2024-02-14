@@ -121,3 +121,22 @@ a:visited {
     font-size: 18px;
     margin-top: -0.5vw;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.stupidfix {
+    margin-top: 300px;
+}
+
+@media(max-width: 768px){
+    .filler {
+        font-size: 8px;
+    }
+    .filler2 {
+        font-size: 8px;
+    }
+}
