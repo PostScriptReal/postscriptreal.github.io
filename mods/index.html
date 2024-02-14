@@ -4,95 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Awesome webpage</title>
 <link rel="icon" type="image/x-icon" href="images/favi.png">
+<link rel="stylesheet" href="./style.css">
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Ubuntu&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto&display=swap');
-    .header {
-        color: whitesmoke;
-        font-family: 'Kanit', sans-serif;
-        font-size: 36px;
-        text-align: center;
-    }
-    body {
-        background-color: rgb(28, 28, 69);
-    }
-
-     /* The navigation menu */
-     .navbar {
-      overflow: hidden;
-      background-color: rgb(50, 41, 91);
-    }
-    
-    /* Navigation links */
-    .navbar a {
-      float: left;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    /* The subnavigation menu */
-    .subnav {
-      float: left;
-      overflow: hidden;
-      font-family: 'Ubuntu', sans-serif;
-    }
-    
-    /* Subnav button */
-    .subnav .subnavbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-    
-    /* Add a red background color to navigation links on hover */
-    .navbar a:hover, .subnav:hover .subnavbtn {
-      background-color: rgb(66, 55, 117);
-    }
-    
-    /* Style the subnav content - positioned absolute */
-    .subnav-content {
-      display: none;
-      position: absolute;
-      left: 0;
-      background-color: rgb(66, 55, 117);
-      width: 100%;
-      z-index: 1;
-    }
-    
-    /* Style the subnav links */
-    .subnav-content a {
-      float: left;
-      color: white;
-      text-decoration: none;
-    }
-    
-    /* Add a grey background color on hover */
-    .subnav-content a:hover {
-      background-color: #eee;
-      color: black;
-    }
-    
-    /* When you move the mouse over the subnav container, open the subnav content */
-    .subnav:hover .subnav-content {
-      display: block;
-    }
     .grid-container {
-      height: 100vh;
-      display: grid;
-      padding-top: 50px;
-      padding-left: 8vw;
-      padding-right: 8vw;
-      grid-template: 
-        "mcpedl blank fnfmplusplus" 100px
+      display:flex;
+      justify-content:space-evenly;
+      text-align:center;
+    }
+    .grid-container > div {
+      height: 40px;
     }
     .grid-item {
       display: flex;
@@ -112,33 +32,17 @@
     .blank {
       grid-area: blank;
     }
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-    .filler {
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 1.2vw;
-    }
-    .filler2 {
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 1.2vw;
-      margin-top: -0.5vw;
-    }
-    .stupidfix {
-      margin-top: 300px;
-    }
-    a {
-        color: rgb(255, 136, 0);
-    }
-    a:visited {
-        color: rgb(166, 89, 0);
+    @media(max-width: 768px){
+      .grid-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .grid-container > div {
+        height: 0px;
+      }
+      .grid-item {
+        padding-bottom: 180px;
+      }
     }
 </style>
 </head>
@@ -149,7 +53,7 @@
 
     <div class="navbar">
         <div class="subnav">
-          <a href="https://postscriptreal.github.io/mods/index.html"><button class="subnavbtn">Home</button></a>
+          <a href="https://postscriptreal.github.io/index.html"><button class="subnavbtn">Home</button></a>
         </div>
         <div class="subnav">
           <a href="https://postscriptreal.github.io/projs.html"><button class="subnavbtn">Projects</button></a>
@@ -175,7 +79,7 @@
           <source srcset="images/SvenCoopMID.png" media="(min-width: 900px)">
           <source srcset="images/SvenCoopLOW.png" media="(min-width: 600px)">
           <source srcset="images/SvenCoopLWT.png" media="(min-width: 400px)">
-          <img src="images/SvenCoopHQ.png" alt="SC Mod Preview" style="width:auto;">
+          <img src="images/SvenCoopLWT.png" alt="SC Mod Preview" style="width:auto;">
         </picture>
       </a>
       <p class="filler">Sven Co-op</p>
@@ -191,7 +95,7 @@
         <source srcset="images/mkwiiMID.png" media="(min-width: 900px)">
         <source srcset="images/mkwiiLOW.png" media="(min-width: 600px)">
         <source srcset="images/mkwiiLWT.png" media="(min-width: 400px)">
-        <img src="images/mkwiiHQ.png" alt="MKWii Mod Preview" style="width:auto;">
+        <img src="images/mkwiiLWT.png" alt="MKWii Mod Preview" style="width:auto;">
       </picture> 
     </a>
     <p class="filler">Mario Kart Wii</p>
