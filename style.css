@@ -9,6 +9,10 @@
 }
 body {
     background-color: rgb(28, 28, 69);
+    background-image: url("images/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* The navigation menu */
