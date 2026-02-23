@@ -1,0 +1,22 @@
+{
+    "songs": [
+        {
+            "name": "All I Need",
+            "artist": "jeonghyeon & SUNGYOO",
+            "genre": "House",
+            "lyrics": "download/jeongyeon, SUNGYOO - All I Need.lrc"
+        },
+        {
+            "name": "Alone Tonight",
+            "artist": "Cepaque",
+            "genre": "Speed Garage",
+            "lyrics": "download/jeongyeon, SUNGYOO - All I Need.lrc"
+        },
+        {
+            "name": "Burning Bridges",
+            "artist": "Beatcore & Ashley Apollodor",
+            "genre": "Melodic Dubstep",
+            "lyrics": "download/Ashley Apollodor, Beatcore - Burning Bridges [NCS Release].lrc"
+        }
+    ]
+}
